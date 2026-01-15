@@ -1,0 +1,36 @@
+[gd_scene load_steps=5 format=3 uid="uid://bycm5ninp6rf6"]
+
+[ext_resource type="Script" uid="uid://bkwfdec63cem1" path="res://bg.gd" id="1_e8j8q"]
+[ext_resource type="Texture2D" uid="uid://clo3pge1aob0l" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Environments/Winter/Layers/sky.png" id="2_iq1of"]
+[ext_resource type="Texture2D" uid="uid://crsc3dpi40yu7" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Environments/Winter/Layers/mountains.png" id="3_36ycx"]
+[ext_resource type="Texture2D" uid="uid://u0ai63grrwbd" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Environments/Winter/Layers/mid-layer-b.png" id="4_iq1of"]
+
+[node name="BG" type="ParallaxBackground"]
+script = ExtResource("1_e8j8q")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.3, 1)
+motion_mirroring = Vector2(1152, 0)
+
+[node name="Back" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(576.00006, 324)
+scale = Vector2(2.7692306, 2.5312498)
+texture = ExtResource("2_iq1of")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.6, 1)
+motion_mirroring = Vector2(1152, 0)
+
+[node name="Mountains" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(576, 414)
+scale = Vector2(5.5384617, 3.0993373)
+texture = ExtResource("3_36ycx")
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(1.1, 1)
+motion_mirroring = Vector2(1152, 0)
+
+[node name="MidLayerB" type="Sprite2D" parent="ParallaxLayer3"]
+position = Vector2(576, 462.5)
+scale = Vector2(2.7692306, 2.2484848)
+texture = ExtResource("4_iq1of")
